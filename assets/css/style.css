@@ -42,11 +42,14 @@
 .hero {
   display: flex;
   padding: 70px;
+  margin-left: -5%;
   background-image: url(../images/ocean-view.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
 } 
 
 .heroGridArea {
@@ -87,12 +90,14 @@ width: 50%;
 background-color: white; 
 text-align: right; 
 font: black; 
+margin-top: 15px;
 } 
   
 .child2 { 
 width: 50%; 
 color: black;
-margin-top: 5px; 
+margin-top: 20px;
+margin-bottom: 20px; 
 } 
 
 
