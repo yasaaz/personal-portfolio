@@ -6,16 +6,19 @@
 
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: lightpink;
-  color: #ffffff;
+  background-color: lightgrey;
+  color: black;
   justify-content: space-between;
 }
 
 .header h1 {
   display: inline-block;
-  font-size: 48px;
+  font-size: 40px;
+  padding: 10%;
 }
 
 .header nav {
@@ -114,7 +117,7 @@ margin-bottom: 20px;
 }
 
 a {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 
@@ -122,9 +125,21 @@ p {
   font-size: 16px;
 }
 
+.work-area {
+  display: flex;
+  flex-direction: row;
+}
+
 section {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.Grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #containerGrid {
@@ -136,6 +151,30 @@ section {
   "Project2 Project2 Project3"
   "Project4 Project5 Project5"
   ;
+  gap: 20px;
+}
+
+#containerGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas:
+  "Project1 Project1 Project1"
+  "Project2 Project2 Project3"
+  "Project4 Project5 Project5"
+  gap: 20px; /
+}
+
+@media (max-width: 768px) {
+  #containerGrid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.categoryGridArea {
+  padding: 20px;
+  text-align: center;
 }
 
 #Project1 {
@@ -154,56 +193,62 @@ section {
 }
 
 #Project4 {
-  grid-area: Project4;
-  background-image: url("../images/02-portfolio-4.jpg");
+grid-area: Project4;
+background-image: url("../images/02-portfolio-4.jpg");
 }
 
 #Project5 {
-  grid-area: Project5;
-  background-image: url("../images/02-run-buddy.jpg");
+grid-area: Project5;
+background-image: url("../images/02-run-buddy.jpg");
 }
 
 .containerGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 5px;
+cursor: pointer;
+display: grid;
+align-content: end;
 }
 
 .heading {
-  padding: 15px;
-  height: 25px;
-  color: black;
-  font-size: 25px;
-  border-bottom: 5px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  margin-left: 15px;
-margin-right: 150px;
-margin-top: 20px;
+padding: 15px;
+height: 25px;
+color: black;
+font-size: 25px;
+border-bottom: 5px;
 }
 
 .row {
-  content: "";
-  display: table;
-  clear: both;
-margin-right: 150px;
+display: flex;
+align-items: center;
+content: "";
+clear: both;
 margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+
+.column {
+float: left;
+flex: 1 1 50%;
+width: 50%;
+padding: 10px;
+margin-left: 15px;
+margin-right: 0px;
+margin-top: 20px;
 }
 
-p {
-  margin: 0;
+
+@media screen and (max-width: 600px) {
+
+.column {
+  width: 100%;
+ }
+
 }
+#emailSection {
+order: 1; 
+margin-top: 20px; 
+}
+
