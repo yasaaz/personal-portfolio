@@ -27,4 +27,5 @@ The project is structured as follows:
 To view the portfolio, simply navigate to the hosted version at [https://github.com/yasaaz/personal-portfolio]. If you are running it locally, open the `index.html` file in your web browser.
 
 Here's how the page should look like: 
+![Yasa-portfolio-image](https://github.com/yasaaz/personal-portfolio/assets/148010250/a1811f7e-c588-46d9-aae7-f1d9daafedbf)
 
