@@ -91,6 +91,7 @@ background-color: white;
 text-align: right; 
 font: black; 
 margin-top: 15px;
+margin-left: 15px;
 } 
   
 .child2 { 
@@ -108,6 +109,7 @@ margin-bottom: 20px;
 }
 
 .work-area .subHeading {
+  margin-left: 15px;
   margin-right: 40%;
 }
 
@@ -180,8 +182,26 @@ section {
 }
 
 .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  margin-left: 15px;
 margin-right: 150px;
 margin-top: 20px;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+margin-right: 150px;
+margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 p {
