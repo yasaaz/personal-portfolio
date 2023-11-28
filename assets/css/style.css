@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+  display: flex;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: lightpink;
+  color: #ffffff;
+  justify-content: space-between;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+  display: flex;
+  padding: 70px;
+  background-image: url(../images/ocean-view.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+} 
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+user agent stylesheet
+body {
+  display: block;
+  margin: 8px;
+}
+
+.Parent { 
+display: flex; 
+flex-direction: row; 
+margin-top: 5px;
+margin-bottom: 5px;
+} 
+  
+.child1 { 
+width: 50%;  
+background-color: white; 
+text-align: right; 
+font: black; 
+} 
+  
+.child2 { 
+width: 50%; 
+color: black;
+margin-top: 5px; 
+} 
+
+
+#about {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+.work-area .subHeading {
+  margin-right: 40%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+#containerGrid {
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "Project1 Project1 Project1"
+  "Project2 Project2 Project3"
+  "Project4 Project5 Project5"
+  ;
+}
+
+#Project1 {
+  grid-area: Project1;
+  background-image: url("../images/02-portfolio-1.jpg");
+
+}
+#Project2 {
+  grid-area: Project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#Project3 {
+  grid-area: Project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#Project4 {
+  grid-area: Project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#Project5 {
+  grid-area: Project5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.containerGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  padding: 15px;
+  height: 25px;
+  color: black;
+  font-size: 25px;
+  border-bottom: 5px;
+}
+
+.column {
+margin-right: 150px;
+margin-top: 20px;
+}
+
+p {
+  margin: 0;
+}
