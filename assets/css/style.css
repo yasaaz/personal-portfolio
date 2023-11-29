@@ -10,7 +10,7 @@
   align-items: center;
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: lightgrey;
+  background-color: lightseagreen;
   color: black;
   justify-content: space-between;
 }
@@ -18,7 +18,7 @@
 .header h1 {
   display: inline-block;
   font-size: 40px;
-  padding: 10%;
+  padding: 5%;
 }
 
 .header nav {
@@ -143,9 +143,7 @@ section {
 }
 
 #containerGrid {
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px;
   grid-template-areas:
   "Project1 Project1 Project1"
   "Project2 Project2 Project3"
@@ -159,10 +157,10 @@ section {
   grid-template-rows: 1fr 1fr 1fr; 
   grid-template-columns: 1fr 1fr; 
   grid-template-areas:
-  "Project1 Project1 Project1"
-  "Project2 Project2 Project3"
+  "Horiseon Horiseon Horiseon"
+  "Personal-Portfolio Personal-Portfolio Project3"
   "Project4 Project5 Project5"
-  gap: 20px; /
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -177,14 +175,14 @@ section {
   text-align: center;
 }
 
-#Project1 {
+#Horiseon {
   grid-area: Project1;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/horiseon-project.png");
 
 }
-#Project2 {
+#Personal-Portfolio {
   grid-area: Project2;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/inside-ocean.jpg");
 }
 
 #Project3 {
